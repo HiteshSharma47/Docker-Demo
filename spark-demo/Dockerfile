@@ -16,7 +16,7 @@ ENV PATH=$JAVA_HOME/bin:$PATH
 ENV SPARK_VERSION=3.5.6
 
 # Download Spark
-RUN wget -q https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop3.tgz \
+RUN wget https://archive.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop3.tgz \
     && tar -xzf spark-${SPARK_VERSION}-bin-hadoop3.tgz \
     && mv spark-${SPARK_VERSION}-bin-hadoop3 /opt/spark \
     && rm spark-${SPARK_VERSION}-bin-hadoop3.tgz
