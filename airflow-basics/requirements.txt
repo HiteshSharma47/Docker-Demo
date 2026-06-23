@@ -1,0 +1,6 @@
+pandas==2.3.0
+numpy==2.3.0
+requests
+psycopg2-binary
+sqlalchemy
+openpyxl

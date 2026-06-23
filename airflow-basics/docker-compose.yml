@@ -1,0 +1,20 @@
+services:
+  airflow:
+    build: .
+
+    container_name: airflow
+
+    ports:
+      - "8088:8080"
+
+    command: standalone
+
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./output:/opt/airflow/output

@@ -1,0 +1,3 @@
+Sent Email To: John and john@test.com
+Sent Email To: Alice and alice@test.com
+Sent Email To: Bob and bob@test.com
